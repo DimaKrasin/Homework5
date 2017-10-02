@@ -1,3 +1,5 @@
+package com.goit.homework;
+
 public class CarDoor {
     private boolean doorStatus;
     private boolean windowStatus;

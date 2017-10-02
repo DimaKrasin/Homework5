@@ -1,3 +1,5 @@
+package com.goit.homework;
+
 public class Car {
     private int dateOfProduction;
     private String typeOfEngine;

@@ -1,3 +1,5 @@
+package com.goit.homework;
+
 public class CarWheel {
 
     private double wheelconditional;
