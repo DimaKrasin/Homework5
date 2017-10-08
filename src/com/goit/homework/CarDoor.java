@@ -2,16 +2,16 @@ package com.goit.homework;
 
 public class CarDoor {
     private boolean doorStatus;
-    private boolean windowStatus;
+    Window window = new Window();
 
     CarDoor(){
         this.doorStatus = true;
-        this.windowStatus = true;
+        window.windowStatus = true;
     }
 
     CarDoor(boolean doorStatus,boolean windowStatus){
         this.doorStatus = doorStatus;
-        this.windowStatus = windowStatus;
+        window.windowStatus = windowStatus;
     }
 
     public void openDoor(){ doorStatus = true; }
@@ -25,26 +25,30 @@ public class CarDoor {
         }
     }
 
-    public void openWindow(){windowStatus = true; }
-
-    public void closeWindow(){windowStatus = false; }
-
-    public void changeWindowStatus(){
-        if(windowStatus = true){windowStatus = false;
-        }else {windowStatus = true;
-        }
-    }
-
     public void show(){
-        System.out.println("doorStatus = "+doorStatus+"\n"+"windowStatus = "+windowStatus);
+        System.out.println("doorStatus = "+doorStatus+"\n"+"windowStatus = "+window.windowStatus);
     }
 
     public boolean isDoorStatus() {
         return doorStatus;
     }
 
+    public void openWindow(){window.windowStatus = true; }
+
+    public void closeWindow(){window.windowStatus = false; }
+
+    public void changeWindowStatus(){
+        if(window.windowStatus = true){window.windowStatus = false;
+        }else {window.windowStatus = true;
+        }
+    }
+
     public boolean isWindowStatus() {
-        return windowStatus;
+        return window.windowStatus;
+    }
+
+    private class Window{
+        private boolean windowStatus;
     }
 
 }
